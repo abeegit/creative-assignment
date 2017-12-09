@@ -1,0 +1,28 @@
+{
+  "name": "creative-assignment",
+  "version": "1.0.0",
+  "description": "Creative assignment for AirAsia",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "precommit": "lint-staged",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abhijeet Kumar (abhijeetkumar_1992@yahoo.in)",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.28.1",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.1",
+    "q": "^1.5.1"
+  },
+  "lint-staged": {
+    "*.{js,json,css}": [
+      "prettier --write --tab-width 2",
+      "git add"
+    ]
+  }
+}
